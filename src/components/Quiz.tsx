@@ -99,10 +99,10 @@ const Quiz: FC = () => {
         Next
       </Button>
       <ProgressIndicator
+        totalQuestions={questions.length}
         answers={selectedAnswers.map((answer) => ({
           isCorrect: answer.isCorrect,
         }))}
-        totalQuestions={questions.length}
       />
     </Box>
   );
